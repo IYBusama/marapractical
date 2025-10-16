@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        .navigation{
+            display: flex;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #333;
+            color: white;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo::first-letter{
+            color: #ff5733;
+        }
+        .links a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .links a:hover{
+            background-color: blue;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            padding: 100px;
+            background-color: rgb(186, 211, 221);
+            flex-direction: column;
+        }
+        .profile-image{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #f3ecea;
+            align-items: center;
+            object-fit: cover;
+        }
+        .msg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+            align-items: center;
+        }
+        .btn{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .hire-me, .services{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .hire-me:hover{
+            background-color: blue;
+        }
+        .abt-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 500px;
+        }
+        .main-abt{
+            margin: 5px;
+            padding: 20px;
+            width: auto;
+        }
+        .about{
+            display: flex;
+            width: 700px;
+            margin: 50px;
+            font-size: 20px;
+        }
+        .education{
+            width: 100%;
+            align-items: flex-start;
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="navigation">
+            <h1 class="logo">Iyoobhan usama</h1>
+            <div class="links">
+                <a href="/" class="link1">home</a>
+                <a href="/" class="link2">skills</a>
+                <a href="/" class="link3">services</a>
+                <a href="/" class="link4">projects</a>
+                <a href="/" class="link5">contact</a>
+            </div>
+        </nav>
+        <section>
+            <div class="hero">
+                <div>
+                    <img src="/images/1711157944180.jpg" class="profile-image">
+                </div>
+                <div class="msg">
+                    <h2 style="font-size: 30px;">Hi i'm usama</h2>
+                    <h2>Aspiring Software Engineer</h2>
+                    <h2>Building innovative software solution</h2>
+                    <div class="btn">
+                        <button class="hire-me"
+                            style="background-color: #f5f5f5;"><a href="/">Hire
+                                me</a></button>
+                        <button class="services" style="background-color: lightseagreen;"><a href="/">services</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="abt-container">
+              <h1 class="abt-txt" style="color: darkcyan;">Professional Summary</h1>
+            <div class="main-abt">
+                <div class="about">  
+                    <p>I am a passionate software engineer with a strong
+                        foundation in developing scalable web applications. My
+                        expertise lies in JavaScript, React, and Node.js, and I
+                        am committed to delivering high-quality software
+                        solutions that meet client needs.</p>
+                </div>
+                <div class="education">
+                    <h1 class="abt-txt2">Education</h1>
+                    <h2>Higher National Diploma in Information Technology (HND in IT)</h2>
+                    <p>Trincomalee Advanced Technological Institute – Trincomalee, Sri Lanka.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
